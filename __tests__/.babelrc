@@ -1,7 +1,9 @@
 {
   "plugins": [
-    ["module-resolver", [
-      { "src": "./src/components", "expose": "components" }
-    ]]
+    ["module-resolver", {
+      "alias": {
+        "components": "./src/components"
+      }
+    }]
   ]
 }
