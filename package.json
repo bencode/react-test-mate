@@ -1,6 +1,6 @@
 {
   "name": "react-test-mate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "test react project with no configuration",
   "main": "index.js",
   "bin": {
