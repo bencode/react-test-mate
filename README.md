@@ -63,15 +63,17 @@ yarn cov
 为了测试方便，可能需要配置模块的alias，此时可添加`.babelrc`文件。
 
 ```shell
-yarn add --dev babel-plugin-module-alias
+yarn add --dev babel-plugin-module-resolver
 ```
 
 ```json
 {
   "plugins": [
-    ["module-alias", [
-      { "src": "./src/components", "expose": "components" }
-    ]]
+    ["module-resolver", {
+      "alias": {
+        "components": "./src/components"
+      }
+    }]
   ]
 }
 ```
