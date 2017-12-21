@@ -3,6 +3,9 @@
   "version": "1.0.2",
   "description": "test react project with no configuration",
   "main": "index.js",
+  "bin": {
+    "test-mate": "bin/test-mate.js"
+  },
   "scripts": {
     "test": "bin/test-mate.js",
     "cov": "bin/test-mate.js --coverage",
