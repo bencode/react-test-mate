@@ -7,16 +7,16 @@ class Hello extends React.PureComponent {
   };
 
 
-  onChange(e) {
+  onChange = e => {
     this.setState({text: e.target.value});
-  }
+  };
 
 
   render() {
     const {text} = this.state;
     return (
       <div>
-        <input type="text" value={text} onChange={::this.onChange} />
+        <input type="text" value={text} onChange={this.onChange} />
         <span className="text">{text}</span>
       </div>
     );

@@ -15,8 +15,7 @@ yarn add --dev react-test-mate
 
 
 ```shell
-yarn add --dev enzyme-adapter-react-15
-yarn add --dev react-test-render@15.6.2
+yarn add --dev enzyme-adapter-react-15 react-test-render@15
 ```
 
 在**package.json**中添加命令:
@@ -89,4 +88,3 @@ __tests__/supports 和 __tests__/fixtures 目录下，jest会忽略这两个目�
 
 
 祝编码快乐！！
-
