@@ -65,19 +65,25 @@ yarn cov
 yarn add --dev babel-plugin-module-resolver
 ```
 
+
+备注：为了不影响正常文件的编译，可以只针对测试环境下开启
+
 ```json
 {
-  "plugins": [
-    ["module-resolver", {
-      "alias": {
-        "components": "./src/components"
-      }
-    }]
-  ]
+  "env": {
+    "test": {
+      "plugins": [
+        ["module-resolver", {
+          "alias": {
+            "components": "./src/components"
+          }
+        }]
+      ]
+    }
+  }
 }
-```
 
-备注：为了不影响正常文件的编译，可以把`.babelrc`文件放在`__tests__`目录下。
+```
 
 
 ### fixtures and supports
