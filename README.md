@@ -65,10 +65,21 @@ yarn cov
 yarn add --dev babel-plugin-module-resolver
 ```
 
+```json
+{
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "components": "./src/components"
+      }
+    }]
+  ]
+}
+```
 
 备注：为了不影响正常文件的编译，可以只针对测试环境下开启
 
-```json
+```
 {
   "env": {
     "test": {
