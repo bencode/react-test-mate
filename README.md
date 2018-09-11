@@ -97,6 +97,20 @@ yarn add --dev babel-plugin-module-resolver
 ```
 
 
+### test url
+
+默认的 testUrl 为 `http://localhost`，可以使用环境变量`TEST_URL`自定义。
+
+可以在`package.json`中配置，也可以在命令行中指定环境变量：
+
+```json
+{
+  "test": "TEST_URL=http://mytest.com test-mate"
+}
+
+```
+
+
 ### fixtures and supports
 
 有时候需要一些测试帮助文件，或fixtures文件，可把这些文件放在
