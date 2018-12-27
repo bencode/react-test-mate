@@ -18,11 +18,6 @@ process.on('unhandledRejection', err => {
 const appRoot = fs.realpathSync(process.cwd());
 
 const argv = process.argv.slice(2);
-// Watch unless on CI or in coverage mode
-if (!process.env.CI && argv.indexOf('--coverage') < 0) {
-  argv.push('--watch');
-}
-
 argv.push('--config', JSON.stringify(createJestConfig(appRoot)));
 
 jest.run(argv);
