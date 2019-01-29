@@ -1,3 +1,6 @@
 {
-  "extends": "bcd-react"
+  extends: 'bcd-react',
+  rules: {
+    import/prefer-default-export: 0
+  }
 }
