@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import Button from 'components/Button';
+import Button from '../../src/components/Button';
 
 
 test('Button', () => {

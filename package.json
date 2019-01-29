@@ -7,9 +7,9 @@
     "test-mate": "bin/test-mate.js"
   },
   "scripts": {
-    "test": "bin/test-mate.js",
-    "cov": "bin/test-mate.js --coverage",
-    "lint": "eslint src lib bin"
+    "lint": "eslint bin lib",
+    "test": "bin/test-mate.js demo",
+    "cov": "bin/test-mate.js demo --coverage"
   },
   "files": [
     "bin",
@@ -27,6 +27,7 @@
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "jest": "^23.5.0",
+    "minimist": "^1.2.0",
     "regenerator-runtime": "^0.12.1"
   },
   "devDependencies": {
