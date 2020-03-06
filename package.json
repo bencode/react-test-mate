@@ -1,6 +1,6 @@
 {
   "name": "react-test-mate",
-  "version": "2.4.2",
+  "version": "3.0.0-beta.1",
   "description": "test react project with no configuration",
   "main": "index.js",
   "bin": {
@@ -21,17 +21,17 @@
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
-    "babel-jest": "^24.0.0",
-    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-jest": "^25.0.0",
+    "babel-plugin-module-resolver": "^4.0.0",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
-    "jest": "^24.0.0",
+    "jest": "^25.1.0",
     "minimist": "^1.2.0",
     "regenerator-runtime": "^0.13.0"
   },
   "devDependencies": {
-    "eslint": "^5.5.0",
-    "eslint-config-bcd-react": "^2.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-bcd-react": "^3.0.0",
     "react": "^16.5.0",
     "react-dom": "^16.5.0"
   },
@@ -40,9 +40,12 @@
     "url": "git+https://github.com/bencode/react-test-mate.git"
   },
   "author": "bencode@163.com",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bencode/react-test-mate/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "homepage": "https://github.com/bencode/react-test-mate#readme"
 }
