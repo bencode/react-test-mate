@@ -1,6 +1,6 @@
 {
   "name": "react-test-mate",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "test react project with no configuration",
   "main": "index.js",
   "bin": {
@@ -22,6 +22,7 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.1.4",
     "babel-jest": "^25.0.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "enzyme": "^3.6.0",
